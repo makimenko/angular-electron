@@ -12,6 +12,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ElectronService } from './providers/electron.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialDesignModule } from "app/design/material-design.module";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ElectronService } from './providers/electron.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialDesignModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]
